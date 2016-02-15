@@ -1,13 +1,17 @@
 #ifndef __ENGINE__
 #define __ENGINE__
 
-#include <stdint.h>
+
+#include "videom.hpp"
 #include "scenem.hpp"
 
 namespace engine {
 
 class Engine {
 public:
+
+    video::Manager* videoManager;
+    scene::Manager* sceneManager;
 
     Engine() {};
     ~Engine() {};

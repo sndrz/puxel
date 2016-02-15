@@ -4,8 +4,8 @@
 namespace tools {
 
 typedef struct {
-    uint32_t x, y;
-    uint32_t button;
+    int x, y;
+    int button;
 } click;
 
 }

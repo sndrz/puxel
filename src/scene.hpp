@@ -8,7 +8,7 @@ namespace scene {
 class Scene {
 public:
 
-    interface::Manager *interfaceManager;
+    interface::Manager* interfaceManager;
 
     Scene() {};
     ~Scene() {};

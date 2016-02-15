@@ -17,7 +17,7 @@ public:
 private:
 
     std::vector<Scene*> scenes;
-    uint32_t currentScene;
+    int currentScene;
 
     void DrawCanvas() {};
     void DrawEffects() {};
