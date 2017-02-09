@@ -1,23 +1,30 @@
-#ifndef __SCENE__
-#define __SCENE__
+/*
+    Puxel
 
-#include "interfacem.hpp"
+    See LICENSE for copyright notes.
+    Sergey Ivanov <sivanov@openmailbox.org>
+*/
 
-namespace scene {
+#ifndef __SCENE_HPP
+#define __SCENE_HPP
 
-class Scene {
-public:
+namespace puxel {
 
-    interface::Manager* interfaceManager;
+    class Scene {
+    private:
 
-    Scene() {};
-    ~Scene() {};
+        void DrawCanvas() {};
+        void DrawEffects() {};
+        void DrawUIDetails() {};
+        void DrawUIElements() {};
+        void DrawUIPopup() {};
 
-private:
+    public:
 
+        void Draw();
 
-};
+    }; // class Scene
 
-}
+} // namespace puxel
 
-#endif // __SCENE__
+#endif // __SCENE_HPP
